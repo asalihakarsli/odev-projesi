@@ -13,7 +13,7 @@
   <button onclick="sozGetir()">Söz Getir</button>
 
   <script>
-    const sozler = ["Bugün güzel geçecek!", "Günün normal geçecek.", "Kötü bir gün... Kaç😨"];
+    const sozler = ["Bugün güzel geçecek!", "Günün normal geçecek.", "Kötü bir gün...😨"];
     function sozGetir() {
       const rastgele = Math.floor(Math.random() * sozler.length);
       document.getElementById('soz').innerText = sozler[rastgele];
