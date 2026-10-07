@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <title>Falımsı</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Bugün Nasıl Geçecek?</h1>
+  <p id="soz">Butona tıkla, günün nasıl geçecek gör.</p>
+  <button onclick="sozGetir()">Söz Getir</button>
+
+  <script>
+    const sozler = ["Bugün güzel geçecek!", "Günün normal geçecek.", "Kötü bir gün... Kaç😨"];
+    function sozGetir() {
+      const rastgele = Math.floor(Math.random() * sozler.length);
+      document.getElementById('soz').innerText = sozler[rastgele];
+    }
+  </script>
+</body>
+</html>
